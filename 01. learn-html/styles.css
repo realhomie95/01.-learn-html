@@ -1,0 +1,52 @@
+/* 기본 선택자 */
+div {
+  background-color: red;
+  color: white;
+}
+
+/* string 속성 */
+#text-red {
+  color: red;
+}
+
+/* class, form 속성 */
+.text-large {
+  font-size: 20px;
+}
+
+/* 특정 속성 선택 후 변경 */
+li.text-large {
+  font-size: 30px;
+}
+
+/* 결합 선택자 */
+div img {
+  width: 400px;
+}
+
+div > a {
+  color: white;
+}
+
+/* div p + a {
+  background-color: pink;
+} */
+
+div p ~ a {
+  background-color: pink;
+}
+
+/* 가상 선택자 */
+.btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: darkgreen;
+  border-radius: 12px;
+  cursor: pointer;
+}

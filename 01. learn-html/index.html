@@ -4,14 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>전종민의 개인 페이지</title>
+
+    <!-- 외부스타일 시트  -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- 내부스타일 시트(태그를 변경함) -->
+    <style>
+      strong {
+        background-color: aqua;
+      }
+    </style>
   </head>
   <body>
     Hello world
+    <button type="button" class="btn">버튼</button>
     <p>p태그입니다.</p>
-    <strong>strong 태그입니다.</strong>
+    <strong id="text-red">strong 태그입니다.</strong>
     <br />
     <strong>strong 태그입니다.</strong>
-    <div style="border: 1px solid red; padding: 10px; margin: 10px">
+    <div
+      style="
+        border: 1px solid red;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+      "
+    >
       <p>
         img 태그 영역
         <br />
@@ -37,9 +55,9 @@
 
     <!-- 순서가 없는 리스트 -->
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
+      <li class="text-large">HTML</li>
+      <li class="text-large">CSS</li>
+      <li class="text-large">JavaScript</li>
     </ul>
 
     <!-- 순서가 있는 리스트 -->
@@ -50,7 +68,7 @@
 
     <!-- Form 요소들 -->
     <form action="">
-      <label for="username">아이디:</label>
+      <label for="username" class="text-large" c>아이디:</label>
       <br />
       <input
         type="text"
@@ -61,7 +79,7 @@
       />
       <br />
 
-      <label for="password">비밀번호:</label>
+      <label for="password" class="text-large">비밀번호:</label>
       <br />
       <input
         type="password"
