@@ -1,3 +1,5 @@
+@import url("reset.css");
+
 /* 기본 선택자 */
 div {
   background-color: red;
@@ -49,4 +51,24 @@ div p ~ a {
   background-color: darkgreen;
   border-radius: 12px;
   cursor: pointer;
+}
+
+/* 박스 스타일 */
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  color: white;
+  border: 5px solid black;
+  /* padding: 20px 10px 40px 0; */
+  padding: 20px 40px;
+  margin: 40px 0;
+  box-sizing: border-box; /* padding, border 포함 */
+}
+
+.children {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  color: aliceblue;
 }
