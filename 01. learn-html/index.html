@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>전종민의 개인 페이지</title>
-</head>
-<body>
-  Hello world
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>전종민의 개인 페이지</title>
+  </head>
+  <body>
+    Hello world
+    <p>p태그입니다.</p>
+    <strong>strong 태그입니다.</strong>
+    <br />
+    <strong>strong 태그입니다.</strong>
+    <div style="border: 1px solid red; padding: 10px; margin: 10px">
+      <p>
+        img 태그 영역
+        <br />
+        <img
+          src="https://i.namu.wiki/i/vnAJT4jx3bxfzNBPYGtyZSpY5uTAsAxLOQt5w2auN8kzULYU6n7FlQObNAZP76dH-eDlz-jjNVVfMmgx799cww.webp"
+          alt="렌코쿠 쿄주로"
+          width="300"
+        />
+      </p>
+      <a href="https://www.naver.com/" target="_blank">네이버로 이동</a>
+    </div>
+    <!-- 제목 태그 -->
+    <h1><span style="color: red">렌코쿠</span> 쿄쥬로!!!!</h1>
+    <h2>제목입니다.</h2>
+    <h3>제목입니다.</h3>
+    <!-- 수평선 태그 -->
+    <h4>제목입니다.</h4>
+    <h5>제목입니다.</h5>
+    <h6>제목입니다.</h6>
+
+    <!-- 리스트 태그 태그 -->
+    <h3>우리 강의에서 다루는 언어</h3>
+
+    <!-- 순서가 없는 리스트 -->
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <!-- 순서가 있는 리스트 -->
+    <ol>
+      <li>첫번째 아이템</li>
+      <li>두번째 아이템</li>
+    </ol>
+
+    <!-- Form 요소들 -->
+    <form action="">
+      <label for="username">아이디:</label>
+      <br />
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="아이디를 입력해주세요."
+        required
+      />
+      <br />
+
+      <label for="password">비밀번호:</label>
+      <br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="비밀번호를 입력해주세요."
+        required
+      />
+      <br />
+
+      <!-- 제출 버튼 만들기 2가지 -->
+      <!-- <input type="submit" value="로그인" /> -->
+      <button type="submit">로그인</button>
+    </form>
+
+    <!-- 체크버튼 -->
+    <form action=""></form>
+    <p>음식 선택</p>
+    <input type="checkbox" name="food" value="chicken" id="chicken" />
+    <label for="chicken">치킨</label>
+    <input type="checkbox" name="food" value="pizza" id="pizza" />
+    <label for="pizza">피자</label>
+    <input type="checkbox" name="food" value="pasta" id="pasta" />
+    <label for="pasta">파스타</label>
+    <input type="checkbox" name="food" value="burger" id="burger" />
+    <label for="burger">햄버거</label>
+    <br />
+    <input type="submit" value="제출하기" />
+
+    <p>성별 선택</p>
+    <input type="radio" name="gender" value="male" id="male" />
+    <label for="male"> 남성 </label>
+
+    <input type="radio" name="gender" value="female" id="female" />
+    <label for="female"> 여성 </label>
+
+    <br />
+    <input type="submit" value="제출하기" />
+  </body>
 </html>
