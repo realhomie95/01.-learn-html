@@ -78,3 +78,16 @@ const sayHello = (name) => {
   console.log(`반갑습니다. ${name}님`);
 };
 sayHello("전종민");
+
+console.log("-------------------------------");
+
+// 5. 조건문
+const score = 60;
+if (score >= 60) {
+  // 조건식이 true일 때 실행되는 코드
+  console.log("합격");
+} else {
+  // 조건식이 false일 때 실행되는 코드
+  console.log("불합격");
+}
+console.log("if문 종료");
