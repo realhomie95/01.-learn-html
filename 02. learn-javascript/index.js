@@ -147,24 +147,3 @@ const userInput = "text";
 // } else {
 //   alert("입력값을 작성해주세요");
 // }
-
-// 7. 배열
-const daysOFWeek = [
-  "월요일",
-  "화요일",
-  "수요일",
-  "목요일",
-  "금요일",
-  "토요일",
-  "일요일",
-];
-console.log("🚀 ~ daysOFWeek:", daysOFWeek);
-console.log("오늘의 요일 :", daysOFWeek[2]);
-
-const idol = ["장원영", "안유진", "리즈", "레이", "가을", "이서"];
-console.log("🚀 ~ idol:", idol);
-console.log("🚀 ~ 최애의 아이돌:", idol[1]);
-console.log("🚀 ~ 마지막 아이돌:", idol[5]);
-
-console.log("🚀 ~ 아이돌의 수:", idol.length);
-console.log("🚀 ~ 마지막 아이돌:", idol[idol.length - 1]);
