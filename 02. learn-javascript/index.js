@@ -82,7 +82,7 @@ sayHello("전종민");
 console.log("-------------------------------");
 
 // 5. 조건문
-const score = 60;
+const score = 59;
 if (score >= 60) {
   // 조건식이 true일 때 실행되는 코드
   console.log("합격");
@@ -91,3 +91,80 @@ if (score >= 60) {
   console.log("불합격");
 }
 console.log("if문 종료");
+let grade = "";
+
+if (score >= 90) {
+  grade = "A등급";
+} else if (score >= 80) {
+  grade = "B등급";
+} else if (score >= 70) {
+  grade = "C등급";
+} else {
+  grade = "D등급";
+}
+
+console.log("🚀 ~ grade:", grade);
+
+// 6. 삼항연산자
+// 여기에 orderSandwich 함수를 작성하세요
+// function orderSandwich(type) {
+//   if (type === "vegan") {
+//     return "🥖 + 🥬 + 🍅 + 🥑 + 🥒";
+//   }
+//   return "🥖 + 🥬 + 🍅 + 🧀 + 🥓";
+// }
+
+// orderSandwich 함수는 type 매개변수를 받고 타입에 따라 다른 재료를 반환해야 합니다
+const orderSandwich = (type = "basic") => {
+  return type === "vegan" ? "🥖 + 🥬 + 🍅 + 🥑 + 🥒" : "🥖 + 🥬 + 🍅 + 🧀 + 🥓";
+};
+
+// 함수 테스트 - 아래 코드는 수정하지 마세요
+console.log("기본 샌드위치 주문: " + orderSandwich());
+console.log("기본 샌드위치 주문: " + orderSandwich("basic"));
+console.log("비건 샌드위치 주문: " + orderSandwich("vegan"));
+
+/* 예상 결과:
+기본 샌드위치 주문: 🥖 + 🥬 + 🍅 + 🧀 + 🥓
+기본 샌드위치 주문: 🥖 + 🥬 + 🍅 + 🧀 + 🥓
+비건 샌드위치 주문: 🥖 + 🥬 + 🍅 + 🥑 + 🥒
+*/
+
+// * 3항 연산자 미션 : age 값이 18세 이상이면 adultype의 값은 "성인" , 18세 미만이면 "미성년자"가 되도록 코드를 작성하세요
+const age = 20;
+const adultype = age >= 18 ? "성인" : "미성년자";
+console.log("🚀 ~ adultype:", adultype);
+
+if (0) {
+  console.log("true입니다!");
+} else {
+  console.log("false입니다!");
+}
+const userInput = "text";
+
+// if (userInput) {
+//   alert("입력해주셔서 감사합니다");
+// } else {
+//   alert("입력값을 작성해주세요");
+// }
+
+// 7. 배열
+const daysOFWeek = [
+  "월요일",
+  "화요일",
+  "수요일",
+  "목요일",
+  "금요일",
+  "토요일",
+  "일요일",
+];
+console.log("🚀 ~ daysOFWeek:", daysOFWeek);
+console.log("오늘의 요일 :", daysOFWeek[2]);
+
+const idol = ["장원영", "안유진", "리즈", "레이", "가을", "이서"];
+console.log("🚀 ~ idol:", idol);
+console.log("🚀 ~ 최애의 아이돌:", idol[1]);
+console.log("🚀 ~ 마지막 아이돌:", idol[5]);
+
+console.log("🚀 ~ 아이돌의 수:", idol.length);
+console.log("🚀 ~ 마지막 아이돌:", idol[idol.length - 1]);
