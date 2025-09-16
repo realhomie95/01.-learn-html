@@ -25,7 +25,10 @@ const person = {
   name: "전종민",
   isMale: true,
   mbti: "ISTJ",
+  favoritefood: ["치킨", "피자", "햄버거"],
 };
 console.log("🚀 ~ person:", person);
 console.log("🚀 ~ 이름:", person["name"]);
 console.log("🚀 ~ 남성여부:", person.isMale);
+console.log("🚀 ~ 좋아하는 음식:", person.favoritefood);
+console.log("🚀 ~ 좋아하는 음식:", person.favoritefood[1]);

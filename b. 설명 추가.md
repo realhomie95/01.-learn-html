@@ -11,3 +11,8 @@ push : 원격 저장소에 업로드 -> git push
 
 - const name = '탄지로'
 - let name = '네즈코'
+
+1. map - 배열
+2. filter - 배열
+3. find - 요소, undefined
+4. some, every - boolean
